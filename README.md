@@ -1,5 +1,14 @@
 # AHS Protocol to Markdown
 
-run the main.py
+## Install
 
-then point obsidian or your favourite markdown reader at the build folder23
+```
+pip install -r requirements.txt
+```
+
+## Run
+```
+python src/main.py
+```
+
+then point obsidian or your favourite markdown reader at the build folder
