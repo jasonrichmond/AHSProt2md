@@ -73,6 +73,10 @@ if ziploc == "":
 
 response = requests.get(ziploc)
 if response.status_code == 200:
+    if os.path.exists("download") and os.path.isdir("download"):
+        shutil.rmtree("download")
+    os.mkdir("download")
+
     with open("download/in.zip", "wb") as file:
         file.write(response.content)
         print("File downloaded successfully!")
